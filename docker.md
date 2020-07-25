@@ -14,7 +14,7 @@ A Docker container is a running instance of a Docker image. We can think of a Do
 > *It's not an accurate analogy but good to understand in this way. 
 
 #### Docker Compose : 
-ssdsd
+Docker Compose is a tool for defining and running multi-container Docker applications. The docker-compose.yml allows us to configure all our application's services in one place and start them all with a single command.
 
 #### Docker Hub :
 Registries are storage for Docker images. Docker Hub is the default public registry which is managed by Docker (the company). Anybody can build and host their Docker images on Docker Hub, we can find images for most of the apps and linux distros we need there. It's like github for docker images.

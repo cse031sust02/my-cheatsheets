@@ -1,3 +1,28 @@
+## Concepts :
+
+#### Dockerfile :
+A Dockerfile is a blueprint for building Docker images. It is simply a text file which contains the build instructions to build the image.
+
+#### Image : 
+We can think of a Docker image as a class in OOP world. 
+
+Docker images are executable packages that include everything needed to run an application — the code, a runtime, libraries, environment variables, and configuration files. We can create our own image from scratch or can use iamges built by others.
+
+#### Container : 
+A Docker container is a running instance of a Docker image. We can think of a Docker container as a Object in OOP world which was created by it's Image(Class).* 
+
+> *It's not an accurate analogy but good to understand in this way. 
+
+#### Docker Compose : 
+ssdsd
+
+#### Docker Hub :
+Registries are storage for Docker images. Docker Hub is the default public registry which is managed by Docker (the company). Anybody can build and host their Docker images on Docker Hub, we can find images for most of the apps and linux distros we need there. It's like github for docker images.
+
+> In short, Docker images hold the snapshot of the Dockerfile, and the Docker container is a running implementation of a Docker image based on the instructions contained within that image. All of this is taken care of by the Docker Engine.
+
+## Commands :
+
 download images to our computer
 ----
 ```
@@ -31,7 +56,8 @@ $ docker run <image-name>
 list of containers
 ----
 ````
-$ docker ps
+$ docker ps      # list out the running containers only
+$ docker ps -a   # list out all contaiers (including  the stopped containers)
 ````
 
 enter the bash of a container

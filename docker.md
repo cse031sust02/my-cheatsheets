@@ -26,55 +26,60 @@ Docker Hub is the default public registry which is managed by Docker (the compan
 
 #### - download images to our computer
 ----
-```
+```bash
 $ docker pull <image-name>
 ```
 
 #### - builds an image from a Dockerfile
 ----
-```
+```bash
 $ docker build <path>
 ```
 
 #### - docker images that have been downloaded/built
 ----
-```
+```bash
 $ docker images
 ```
 
 #### - removes one or more images
 ----
-````
+```bash
 $ docker rmi <image-name>
 ````
 
 #### - run a container
 ----
-````
+```bash
 $ docker run <image-name>
+
+# Run a container from the <image-name> image,
+# name the running container “my_container” and
+# expose port 5000 externally, mapped to port 80 inside the container
+$ docker container run --name my_container -p 5000:80 <image-name>
 ````
 
 #### - list of containers
 ----
-````
+```bash
 $ docker ps      # list out the running containers only
 $ docker ps -a   # list out all contaiers (including  the stopped containers)
 ````
 
 #### - enter the bash of a container
 ----
-````
+```bash
 $ docker exec -it <container-id-or-name> bash
 ````
 
 #### - stop containers
 ----
-````
+```bash
 $ docker stop <container-id-or-name>
 ````
 
 #### - removes one or more containers
 ----
-````
+```bash
 $ docker rm <container-id-or-name>
 ````

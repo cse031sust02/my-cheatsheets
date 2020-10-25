@@ -4,7 +4,7 @@
 A Dockerfile is a blueprint for building Docker images. It is simply a text file which contains the build instructions to build the image.
 
 #### Image : 
-Docker images are executable packages that include everything needed to run an application — the code, a runtime, libraries, environment variables, and configuration files. We can create our own image from scratch or can use iamges built by others.
+Docker images are executable packages that include everything needed to run an application — the code, a runtime, libraries, environment variables, and configuration files. We can create our own image from scratch or can use images built by others.
 
 #### Container : 
 A Docker container is a running instance of a Docker image. We can think of a Docker container as a Object in OOP world which was created by it's Image(Class).* A container can expose ports and volumes to interact with other containers or/and the outer world. 

@@ -30,19 +30,22 @@ Docker Hub is the default public registry which is managed by Docker (the compan
 $ docker pull <image-name>
 ```
 
-#### - builds an image from a Dockerfile
+#### - build an image from a Dockerfile
 ----
 ```bash
 $ docker build <path>
+
+# example : build a image with a tag (named my-image)
+$ docker build --tag my-image .
 ```
 
-#### - docker images that have been downloaded/built
+#### - list of images (that have been downloaded/built)
 ----
 ```bash
 $ docker images
 ```
 
-#### - removes one or more images
+#### - remove one or more images
 ----
 ```bash
 $ docker rmi <image-name>
@@ -52,12 +55,19 @@ $ docker rmi <image-name>
 ----
 ```bash
 $ docker run <image-name>
+# note : docker run = docker create + docker start + docker attach
+```
 
-# Run a container from the <image-name> image,
-# name the running container “my_container” and
-# expose port 5000 externally, mapped to port 80 inside the container
+```bash
+# example : docker run with options  :
+# --------------------------------------
+# Run a container 
+# - from the <image-name> image,
+# - name the running container “my_container”,
+# - expose port 5000 externally and
+# - mapped to port 80 inside the container
 $ docker container run --name my_container -p 5000:80 <image-name>
-````
+```
 
 #### - list of containers
 ----
@@ -82,4 +92,10 @@ $ docker stop <container-id-or-name>
 ----
 ```bash
 $ docker rm <container-id-or-name>
+````
+
+#### - remove unused data
+----
+```bash
+$ docker system prune
 ````
